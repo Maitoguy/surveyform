@@ -1,0 +1,112 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.LogIn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #6096b4;
+  padding: 2rem;
+}
+
+header {
+  background-color: #93bfcf;
+  padding: 1rem;
+  width: 100%;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  color: #dcd6ee;
+}
+
+main {
+  width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #93bfcf;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #dcd6ee;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+input[type="submit"] {
+  background-color: #93bfcf;
+  color: #dcd6ee;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.error-message {
+  margin-top: 1rem;
+  background-color: #fcf3cf;
+  padding: 1rem;
+  border: 1px solid #dcd6ee;
+  border-radius: 4px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-message p {
+  color: #c0392b;
+}
+
+.error-message button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #93bfcf;
+  color: #dcd6ee;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
